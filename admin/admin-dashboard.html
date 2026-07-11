@@ -1,0 +1,326 @@
+/* ===================================
+   Login Submit
+=================================== */
+
+loginForm.addEventListener(
+
+"submit",
+
+async(event)=>{
+
+    event.preventDefault();
+
+    const email =
+
+    emailInput.value.trim();
+
+    const password =
+
+    passwordInput.value.trim();
+
+    if(email==="" || password===""){
+
+        showMessage(
+
+            "Please fill in all fields.",
+
+            "error"
+
+        );
+
+        return;
+
+    }
+
+    setLoading(true);
+
+    const success =
+
+    await adminLogin(
+
+        email,
+
+        password
+
+    );
+
+    setLoading(false);
+
+    if(success){
+
+        showMessage(
+
+            "Login successful. Redirecting...",
+
+            "success"
+
+        );
+
+        if(rememberMe.checked){
+
+            localStorage.setItem(
+
+                "adminEmail",
+
+                email
+
+            );
+
+        }
+
+        else{
+
+            localStorage.removeItem(
+
+                "adminEmail"
+
+            );
+
+        }
+
+        setTimeout(()=>{
+
+            window.location.href =
+
+            "admin-dashboard.html";
+
+        },1000);
+
+    }
+
+    else{
+
+        showMessage(
+
+            "Invalid email or password.",
+
+            "error"
+
+        );
+
+    }
+
+});
+
+/* ===================================
+   Enter Key Support
+=================================== */
+
+passwordInput.addEventListener(
+
+"keydown",
+
+(event)=>{
+
+    if(event.key==="Enter"){
+
+        loginForm.requestSubmit();
+
+    }
+
+});
+
+/* ===================================
+   Auto Focus
+=================================== */
+
+window.addEventListener(
+
+"load",
+
+()=>{
+
+    emailInput.focus();
+
+});
+<!-- Recent Activity -->
+
+<section class="admin-section">
+
+<h2>
+
+Recent Activity
+
+</h2>
+
+<div class="dashboard-card">
+
+<ul class="activity-list">
+
+<li>
+
+✅ New admission application received.
+
+</li>
+
+<li>
+
+📢 Notification published successfully.
+
+</li>
+
+<li>
+
+📅 Event updated by admin.
+
+</li>
+
+<li>
+
+🖼 New gallery image uploaded.
+
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Quick Actions -->
+
+<section class="admin-section">
+
+<h2>
+
+Quick Actions
+
+</h2>
+
+<div class="dashboard-grid">
+
+<a
+
+href="notifications.html"
+
+class="dashboard-card">
+
+<h3>📢 Manage Notifications</h3>
+
+<p>
+
+Add, edit or delete school notices.
+
+</p>
+
+</a>
+
+<a
+
+href="events.html"
+
+class="dashboard-card">
+
+<h3>📅 Manage Events</h3>
+
+<p>
+
+Create and update upcoming events.
+
+</p>
+
+</a>
+
+<a
+
+href="gallery.html"
+
+class="dashboard-card">
+
+<h3>🖼 Manage Gallery</h3>
+
+<p>
+
+Upload and organize gallery images.
+
+</p>
+
+</a>
+
+<a
+
+href="faculty.html"
+
+class="dashboard-card">
+
+<h3>👨‍🏫 Manage Faculty</h3>
+
+<p>
+
+Add, edit and remove faculty members.
+
+</p>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- Latest Notifications -->
+
+<section class="admin-section">
+
+<h2>
+
+Latest Notifications
+
+</h2>
+
+<table class="admin-table">
+
+<thead>
+
+<tr>
+
+<th>Title</th>
+
+<th>Date</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="notificationTable">
+
+<tr>
+
+<td colspan="3">
+
+Loading...
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<script
+
+type="module"
+
+src="../js/firebase.js">
+
+</script>
+
+<script
+
+type="module"
+
+src="../js/admin.js">
+
+</script>
+
+</body>
+
+</html>

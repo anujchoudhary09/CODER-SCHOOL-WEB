@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manage Notifications | School Management</title>
+
+<meta name="description" content="Manage School Notifications">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" href="../css/admin.css">
+
+<link rel="stylesheet" href="../css/responsive.css">
+
+<link rel="stylesheet" href="../css/darkmode.css">
+
+</head>
+
+<body>
+
+<div class="admin-dashboard">
+
+<aside class="admin-sidebar">
+
+<div class="logo">
+
+<img src="../assets/images/logo.png"
+
+alt="School Logo">
+
+<div>
+
+<h2>School Admin</h2>
+
+<p>Management Panel</p>
+
+</div>
+
+</div>
+
+<nav class="admin-nav">
+
+<a href="admin-dashboard.html">
+
+🏠 Dashboard
+
+</a>
+
+<a href="homepage.html">
+
+🖥 Homepage
+
+</a>
+
+<a href="notifications.html" class="active">
+
+📢 Notifications
+
+</a>
+
+<a href="events.html">
+
+📅 Events
+
+</a>
+
+<a href="gallery.html">
+
+🖼 Gallery
+
+</a>
+
+<a href="faculty.html">
+
+👨‍🏫 Faculty
+
+</a>
+
+<a href="settings.html">
+
+⚙ Settings
+
+</a>
+
+<a href="#" id="logoutBtn">
+
+🚪 Logout
+
+</a>
+
+</nav>
+
+</aside>
+
+<main class="admin-content">
+
+<header class="admin-topbar">
+
+<div>
+
+<h1>
+
+Manage Notifications
+
+</h1>
+
+<p>
+
+Add, edit and delete school notices.
+
+</p>
+
+</div>
+
+</header>
+
+<section class="dashboard-card">
+
+<h2>
+
+Add Notification
+
+</h2>
+
+<form id="notificationForm">
+
+<div class="form-group">
+
+<label>
+
+Title
+
+</label>
+
+<input
+
+type="text"
+
+id="notificationTitle"
+
+placeholder="Enter notification title"
+
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Date
+
+</label>
+
+<input
+
+type="date"
+
+id="notificationDate"
+
+required>
+
+</div>
+<div class="form-group">
+
+<label>
+
+Description
+
+</label>
+
+<textarea
+
+id="notificationDescription"
+
+rows="4"
+
+placeholder="Enter notification details"
+
+required>
+
+</textarea>
+
+</div>
+
+<button
+
+type="submit"
+
+class="admin-login-btn">
+
+Publish Notification
+
+</button>
+
+</form>
+
+</section>
+
+<section class="dashboard-card">
+
+<h2>
+
+All Notifications
+
+</h2>
+
+<table class="admin-table">
+
+<thead>
+
+<tr>
+
+<th>Title</th>
+
+<th>Date</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="notificationTable">
+
+<tr>
+
+<td colspan="3">
+
+No notifications available.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<script
+
+type="module"
+
+src="../js/firebase.js">
+
+</script>
+
+<script
+
+type="module"
+
+src="../js/notifications.js">
+
+</script>
+
+</body>
+
+</html>
