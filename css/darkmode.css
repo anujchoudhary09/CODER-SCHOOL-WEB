@@ -1,0 +1,374 @@
+/* ======================================
+   Dark Mode Root
+====================================== */
+
+body.dark-mode{
+
+    --background:#0f172a;
+
+    --surface:#1e293b;
+
+    --text:#f8fafc;
+
+    --text-light:#cbd5e1;
+
+    --border:#334155;
+
+    background:var(--background);
+
+    color:var(--text);
+
+}
+
+/* ======================================
+   Header
+====================================== */
+
+body.dark-mode .header{
+
+    background:rgba(15,23,42,.95);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+body.dark-mode .logo-text h2{
+
+    color:#ffffff;
+
+}
+
+body.dark-mode .logo-text span{
+
+    color:var(--text-light);
+
+}
+
+body.dark-mode .nav-menu{
+
+    background:transparent;
+
+}
+
+body.dark-mode .nav-menu a{
+
+    color:var(--text);
+
+}
+
+body.dark-mode .nav-menu a:hover,
+
+body.dark-mode .nav-menu .active{
+
+    color:#60a5fa;
+
+}
+
+body.dark-mode .theme-btn,
+
+body.dark-mode .menu-btn{
+
+    background:#1e3a8a;
+
+    color:#ffffff;
+
+}
+
+body.dark-mode .theme-btn:hover,
+
+body.dark-mode .menu-btn:hover{
+
+    background:#2563eb;
+
+}
+
+/* ======================================
+   Sections
+====================================== */
+
+body.dark-mode .highlights,
+
+body.dark-mode .facilities,
+
+body.dark-mode .gallery-preview{
+
+    background:var(--background);
+
+}
+
+body.dark-mode .academics,
+
+body.dark-mode .notifications,
+
+body.dark-mode .testimonials{
+
+    background:#111827;
+
+}
+
+body.dark-mode .section-header h2{
+
+    color:var(--text);
+
+}
+
+body.dark-mode .section-header p{
+
+    color:var(--text-light);
+
+}
+
+body.dark-mode .section-tag{
+
+    background:#1e3a8a;
+
+    color:#dbeafe;
+
+}
+
+/* ======================================
+   Cards
+====================================== */
+
+body.dark-mode .highlight-card,
+
+body.dark-mode .academic-card,
+
+body.dark-mode .facility-card,
+
+body.dark-mode .notification-card,
+
+body.dark-mode .event-card,
+
+body.dark-mode .testimonial-card,
+
+body.dark-mode .stat-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .highlight-card h3,
+
+body.dark-mode .academic-content h3,
+
+body.dark-mode .facility-card h3,
+
+body.dark-mode .notification-card h3,
+
+body.dark-mode .event-content h3,
+
+body.dark-mode .testimonial-card h4{
+
+    color:var(--text);
+
+}
+
+body.dark-mode .highlight-card p,
+
+body.dark-mode .academic-content p,
+
+body.dark-mode .notification-card p,
+
+body.dark-mode .event-content p,
+
+body.dark-mode .testimonial-card p{
+
+    color:var(--text-light);
+
+}
+/* ======================================
+   Principal Section
+====================================== */
+
+body.dark-mode .principal-content h2,
+
+body.dark-mode .principal-content h4{
+
+    color:var(--text);
+
+}
+
+body.dark-mode .principal-content p,
+
+body.dark-mode .principal-content span{
+
+    color:var(--text-light);
+
+}
+
+/* ======================================
+   Statistics Section
+====================================== */
+
+body.dark-mode .statistics{
+
+    background:linear-gradient(135deg,#020617,#0f172a);
+
+}
+
+body.dark-mode .stat-card{
+
+    background:rgba(30,41,59,.85);
+
+    border:1px solid #475569;
+
+}
+
+body.dark-mode .stat-card h3,
+
+body.dark-mode .stat-card p{
+
+    color:#ffffff;
+
+}
+
+/* ======================================
+   Gallery
+====================================== */
+
+body.dark-mode .gallery-grid img{
+
+    border:2px solid #334155;
+
+}
+
+body.dark-mode .gallery-grid img:hover{
+
+    border-color:#60a5fa;
+
+}
+
+/* ======================================
+   Call To Action
+====================================== */
+
+body.dark-mode .cta{
+
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+
+}
+
+body.dark-mode .cta .btn-secondary{
+
+    background:#ffffff;
+
+    color:#1d4ed8;
+
+}
+
+/* ======================================
+   Footer
+====================================== */
+
+body.dark-mode .footer{
+
+    background:#020617;
+
+}
+
+body.dark-mode .footer-links a,
+
+body.dark-mode .footer-about p,
+
+body.dark-mode .footer-contact p,
+
+body.dark-mode .footer-bottom{
+
+    color:#cbd5e1;
+
+}
+
+body.dark-mode .footer-links a:hover{
+
+    color:#60a5fa;
+
+}
+
+/* ======================================
+   Forms
+====================================== */
+
+body.dark-mode input,
+
+body.dark-mode textarea,
+
+body.dark-mode select{
+
+    background:#1e293b;
+
+    color:#ffffff;
+
+    border:1px solid #475569;
+
+}
+
+body.dark-mode input::placeholder,
+
+body.dark-mode textarea::placeholder{
+
+    color:#94a3b8;
+
+}
+
+body.dark-mode input:focus,
+
+body.dark-mode textarea:focus,
+
+body.dark-mode select:focus{
+
+    border-color:#60a5fa;
+
+    outline:none;
+
+}
+
+/* ======================================
+   Scroll To Top
+====================================== */
+
+body.dark-mode .scroll-top{
+
+    background:#2563eb;
+
+}
+
+body.dark-mode .scroll-top:hover{
+
+    background:#3b82f6;
+
+}
+
+/* ======================================
+   Scrollbar
+====================================== */
+
+body.dark-mode::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+body.dark-mode::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
+
+body.dark-mode::-webkit-scrollbar-thumb{
+
+    background:#3b82f6;
+
+    border-radius:999px;
+
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover{
+
+    background:#60a5fa;
+
+}

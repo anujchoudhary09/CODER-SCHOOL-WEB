@@ -1,0 +1,523 @@
+/* ==================================
+   Responsive CSS
+   Desktop First
+================================== */
+
+/* ===========================
+   Large Tablets
+=========================== */
+
+@media (max-width:1024px){
+
+.container{
+
+    width:94%;
+
+}
+
+.nav-menu{
+
+    gap:18px;
+
+}
+
+.hero{
+
+    padding:130px 0 80px;
+
+}
+
+.hero-content h1{
+
+    font-size:3.3rem;
+
+}
+
+.hero-stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.highlights-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.about-preview{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+.principal{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+.principal-image{
+
+    max-width:420px;
+
+    margin:auto;
+
+}
+
+.academics-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.facilities-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.testimonial-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+.section-header{
+
+    margin-bottom:45px;
+
+}
+
+}
+/* ===========================
+   Mobile Devices
+=========================== */
+
+@media (max-width:768px){
+
+html,
+body{
+
+    overflow-x:hidden;
+
+}
+
+.header{
+
+    height:75px;
+
+}
+
+.navbar{
+
+    height:75px;
+
+}
+
+.logo img{
+
+    width:45px;
+
+    height:45px;
+
+}
+
+.logo-text h2{
+
+    font-size:1rem;
+
+}
+
+.logo-text span{
+
+    display:none;
+
+}
+
+.menu-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.nav-menu{
+
+    position:fixed;
+
+    top:75px;
+
+    left:-100%;
+
+    width:100%;
+
+    height:calc(100vh - 75px);
+
+    background:#ffffff;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    padding:40px 20px;
+
+    gap:22px;
+
+    transition:.35s ease;
+
+    overflow-y:auto;
+
+    z-index:999;
+
+}
+
+.nav-menu.active{
+
+    left:0;
+
+}
+
+.hero{
+
+    min-height:100vh;
+
+    padding:120px 20px 70px;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    width:100%;
+
+}
+
+.hero-content h1{
+
+    font-size:2.3rem;
+
+    line-height:1.25;
+
+}
+
+.hero-content p{
+
+    font-size:1rem;
+
+    margin:20px auto 30px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+    max-width:320px;
+
+}
+
+.hero-stats{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+}
+
+.hero-stat{
+
+    padding:18px;
+
+}
+
+.section-header{
+
+    margin-bottom:35px;
+
+    padding:0 10px;
+
+}
+
+.section-header h2{
+
+    font-size:2rem;
+
+}
+
+.highlights-grid,
+
+.academics-grid,
+
+.facilities-grid,
+
+.stats-grid,
+
+.testimonial-grid,
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.about-preview,
+
+.principal{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+}
+
+.about-features{
+
+    grid-template-columns:1fr;
+
+}
+
+.event-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.event-date{
+
+    margin:auto;
+
+}
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.footer-logo{
+
+    margin:0 auto 20px;
+
+}
+
+.footer-links ul{
+
+    align-items:center;
+
+}
+
+.footer-contact{
+
+    text-align:center;
+
+}
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+}
+/* ===========================
+   Small Mobile Devices
+=========================== */
+
+@media (max-width:480px){
+
+.hero{
+
+    padding:110px 15px 60px;
+
+}
+
+.hero-content h1{
+
+    font-size:1.9rem;
+
+}
+
+.hero-content p{
+
+    font-size:.95rem;
+
+}
+
+.hero-tag{
+
+    font-size:.8rem;
+
+    padding:8px 16px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    padding:14px 20px;
+
+}
+
+.hero-buttons{
+
+    gap:15px;
+
+}
+
+.hero-stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.hero-stat{
+
+    padding:20px;
+
+}
+
+.section-header h2{
+
+    font-size:1.7rem;
+
+}
+
+.section-header p{
+
+    font-size:.95rem;
+
+}
+
+.highlight-card,
+
+.academic-card,
+
+.facility-card,
+
+.notification-card,
+
+.testimonial-card,
+
+.stat-card{
+
+    padding:20px;
+
+}
+
+.gallery-grid img{
+
+    height:200px;
+
+}
+
+.event-card{
+
+    padding:20px;
+
+}
+
+.event-date{
+
+    width:80px;
+
+    height:80px;
+
+}
+
+.event-date span{
+
+    font-size:1.6rem;
+
+}
+
+.footer{
+
+    padding-top:50px;
+
+}
+
+.footer-container{
+
+    gap:30px;
+
+}
+
+.footer-bottom{
+
+    font-size:.85rem;
+
+    padding:18px;
+
+}
+
+}
+
+/* ===========================
+   Landscape Phones
+=========================== */
+
+@media (max-height:500px) and (orientation:landscape){
+
+.hero{
+
+    min-height:auto;
+
+    padding:120px 20px 70px;
+
+}
+
+.nav-menu{
+
+    height:auto;
+
+    max-height:80vh;
+
+}
+
+}
